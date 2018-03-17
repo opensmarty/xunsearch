@@ -302,7 +302,7 @@ fi
 old_version=
 echo -n "Checking libevent ... "
 if test -f $prefix/include/event2/event-config.h ; then
-  old_version=`cat $prefix/include/event2/event-config.h | grep EVENT_VERSION | cut -d\" -f2`
+  old_version=`cat $prefix/include/event2/event-config.h | grep EVENT__VERSION | cut -d\" -f2`
   echo $old_version
 else
   echo "no"
