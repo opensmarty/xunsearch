@@ -124,7 +124,7 @@ if test "$with_libevent" != "no" ; then
 	AC_MSG_CHECKING([for correct libevent version])
 	AC_EGREP_CPP(yes, [
 #include "$LIBEVENT_DIR/include/event2/event-config.h"
-#if _EVENT_NUMERIC_VERSION >= 0x02000000
+#if EVENT__NUMERIC_VERSION >= 0x02000000
 yes
 #endif
 	], [
